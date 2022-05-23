@@ -10,6 +10,7 @@ const Header = ({ todo, setTodo, input, setInput, edit, setEdit }) => {
     } else {
       updateTodo(input, edit.id, edit.completed);
     }
+    setEdit("");
   };
   const updateTodo = (text, id, completed) => {
     const newTodo = todo.map((item) =>
